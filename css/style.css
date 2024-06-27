@@ -154,7 +154,6 @@ img {
     color: var(--color-contrast);
     padding-top: 100px;
     padding-bottom: 100px;
-    height: 250px;
 }
 
 .project__container {
@@ -207,7 +206,7 @@ img {
 }
 
 .work__desc {
-    width: 540px;
+    max-width: 540px;
     text-align: center;
 }
 
@@ -249,15 +248,6 @@ img {
 /* footer */
 
 
-@media screen and (min-width: 375px) {
-    body {
-        font-size: 16px;
-    }
-    .center {
-        padding-left: calc(50vw - 160px);
-        padding-right: calc(50vw - 160px);
-    }
-}
 
 @media screen and (max-width: 1250px) {
     .center {
@@ -315,9 +305,6 @@ img {
         max-width: 180px;
 
     }
-    .about-me {
-
-    }
     .footer {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -332,6 +319,7 @@ img {
     .center {
         padding-left: calc(50vw - 200px);
         padding-right: calc(50vw - 200px);
+
     }
     .nav__list {
         flex-wrap: wrap;
@@ -343,6 +331,63 @@ img {
     .center {
         padding-left: calc(50vw - 185px);
         padding-right: calc(50vw - 185px);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .center {
+        padding-left: calc(50vw - 160px);
+        padding-right: calc(50vw - 160px);
+    }
+    .nav__container {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .offer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .offer__content {
+         max-width: 80%;
+        max-height: 20%;
+     }
+    .offer__title {
+        font-size: 28px;
+        margin: 0 0 10px;
+    }
+    .offer__desc {
+        margin: 0 0 10px;
+    }
+
+    .about-me {
+        padding: 5%;
+    }
+    .about-me__content {
+        margin-left: 50px;
+        max-width: 250px;
+    }
+    .about-me__title {
+        font-size: 24px;
+        margin: 0 0 10px;
+    }
+    .project {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .project__container {
+        flex-wrap: wrap;
+    }
+    .project__information {
+    }
+    .work {
+        padding: 5%;
+    }
+    .work__content {
+        margin: 0 45px 0 50px;
+    }
+    .work__title {
+        font-size: 26px;
+        margin: 0 0 10px;
     }
 }
 
